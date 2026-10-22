@@ -1,0 +1,108 @@
+dependencies:
+  espressif/button:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__button
+      type: local
+    version: 4.2.1
+  espressif/cmake_utilities:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__cmake_utilities
+      type: local
+    version: 0.5.3
+  espressif/esp_lcd_co5300:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__esp_lcd_co5300
+      type: local
+    version: 2.2.0
+  espressif/esp_lcd_touch:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__esp_lcd_touch
+      type: local
+    version: 1.2.1
+  espressif/esp_lv_decoder:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__esp_lv_decoder
+      type: local
+    version: 0.4.3
+  espressif/esp_lv_fs:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__esp_lv_fs
+      type: local
+    version: 1.0.1
+  espressif/esp_lvgl_adapter:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__esp_lvgl_adapter
+      type: local
+    version: 0.6.4
+  espressif/esp_mmap_assets:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__esp_mmap_assets
+      type: local
+    version: 2.0.1
+  espressif/esp_new_jpeg:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__esp_new_jpeg
+      type: local
+    version: 1.0.2
+  espressif/freetype:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__freetype
+      type: local
+    version: 2.14.3~1
+  espressif/knob:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__knob
+      type: local
+    version: 1.1.0
+  espressif/libpng:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__libpng
+      type: local
+    version: 1.6.58~2
+  espressif/zlib:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/espressif__zlib
+      type: local
+    version: 1.3.2~1
+  idf:
+    source:
+      type: idf
+    version: 6.0.1
+  lvgl/lvgl:
+    dependencies: []
+    source:
+      path: ../VIEWE-Demos/shared-components/lvgl__lvgl
+      type: local
+    version: 9.5.0
+direct_dependencies:
+- espressif/button
+- espressif/cmake_utilities
+- espressif/esp_lcd_co5300
+- espressif/esp_lcd_touch
+- espressif/esp_lv_decoder
+- espressif/esp_lv_fs
+- espressif/esp_lvgl_adapter
+- espressif/esp_mmap_assets
+- espressif/esp_new_jpeg
+- espressif/freetype
+- espressif/knob
+- espressif/libpng
+- espressif/zlib
+- idf
+- lvgl/lvgl
+manifest_hash: f4c027c892b8bf04ebb1b1e9a3d37836fe7806e6fcda5986aa69688d35ee2d49
+target: esp32s3
+version: 3.0.0
