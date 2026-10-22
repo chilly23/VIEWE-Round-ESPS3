@@ -1,0 +1,18 @@
+{
+  "upstream": "https://github.com/facebookincubator/muse-gadget-sdk",
+  "commit": "4268880f4bf3e9c736c08ea5efeac6f628fe6f97",
+  "board": "VIEWE-ROUND-V1.1 CO5300 466x466 ESP32-S3 N16R8",
+  "ui_input_commit": "8e613f77f3a95a63e70cf8be549db9e589105ea0",
+  "mode": "offline interactive official UI",
+  "sdk_token_in_binary": false,
+  "hardware_tested": false,
+  "build_passed": true,
+  "app_bytes": 921600,
+  "sha256": {
+    "firmware/bootloader.bin": "11d9cc391daea6be49b85be85828450e5753dd54c8d356fdadbf0cb83351f777",
+    "firmware/partition-table.bin": "ffa95286aed5ff575aebea506fda45007d7066bd5278c3f3a65a960b9d599bb6",
+    "firmware/ota_data_initial.bin": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
+    "firmware/muse-offline.bin": "0140361f350d684c22160b4b5cc2f42c45dbbef905cc0152f74d59733f5edf9a",
+    "flash_args": "5da5e140861a9f2b768c75b6970e693cab7211636758e416e226237b796fe136"
+  }
+}

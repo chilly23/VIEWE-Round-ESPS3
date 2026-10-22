@@ -1,0 +1,5 @@
+--flash-mode dio --flash-freq 80m --flash-size keep
+0x0 firmware/bootloader.bin
+0x10000 firmware/partition-table.bin
+0x1d000 firmware/ota_data_initial.bin
+0x20000 firmware/muse-offline.bin
