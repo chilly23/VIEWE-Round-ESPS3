@@ -1,0 +1,1 @@
+idf_component_register(SRCS "viewe_bsp.c" "qmi_viewe.c" "muse_lcd_bands.c" INCLUDE_DIRS "include" "." REQUIRES esp_driver_spi esp_driver_gpio esp_driver_i2c esp_driver_i2s esp_lcd esp_timer esp_psram espressif__esp_lvgl_adapter espressif__esp_lcd_co5300 lvgl__lvgl)
