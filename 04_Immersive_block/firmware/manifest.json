@@ -1,0 +1,23 @@
+{
+  "board": "VIEWE-ROUND-V1.1 / CO5300 / ESP32-S3 N16R8",
+  "project": "04_Immersive_block",
+  "flash_settings": {
+    "flash_mode": "dio",
+    "flash_size": "16MB",
+    "flash_freq": "80m"
+  },
+  "files": {
+    "0x0": {
+      "file": "bootloader.bin",
+      "sha256": "6f95a7da84a23f313e53dd2b8d341ac195e51ea79135300ec2f75aa22883e986"
+    },
+    "0x8000": {
+      "file": "partition-table.bin",
+      "sha256": "fd8026bff850ca0dee41c41305160317fffe604dda30a9bd5a701ac82d96fa17"
+    },
+    "0x10000": {
+      "file": "hello_world.bin",
+      "sha256": "3191c54572d3a76110ff306438bc344c8b212b44fed21129086d9201b8937ffb"
+    }
+  }
+}
