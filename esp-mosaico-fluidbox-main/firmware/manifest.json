@@ -1,0 +1,23 @@
+{
+  "board": "VIEWE-ROUND-V1.1 / CO5300 / ESP32-S3 N16R8",
+  "project": "esp-mosaico-fluidbox-main",
+  "flash_settings": {
+    "flash_mode": "dio",
+    "flash_size": "16MB",
+    "flash_freq": "80m"
+  },
+  "files": {
+    "0x0": {
+      "file": "bootloader.bin",
+      "sha256": "44f261deac3d62fc5914c0fd0cf0f75e683eac8a1d47709f93f2f0b907d96c21"
+    },
+    "0x8000": {
+      "file": "partition-table.bin",
+      "sha256": "5295e8c42d6fb5f95e4e8a185932c6191d27cfc5078322475347e40e71af815a"
+    },
+    "0x10000": {
+      "file": "viewe-fluidbox.bin",
+      "sha256": "47e0daf5fae041a4b9e68d2e3ed1ab60e5e92e8c8b1873c5c130fd3e50d03a9f"
+    }
+  }
+}
