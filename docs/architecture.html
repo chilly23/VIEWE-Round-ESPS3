@@ -1,52 +1,63 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VIEWE firmware paths</title><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Geist:wght@400;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><style>*{box-sizing:border-box}body{margin:0;padding:24px;background:#f5f5f5;color:#2d3142;font-family:Geist,Arial,sans-serif}main{max-width:1120px;margin:auto}.diagram-container{width:100%;overflow-x:auto}svg{display:block;width:100%;min-width:960px}h1{font-family:'Instrument Serif',Georgia,serif;font-weight:400}p{line-height:1.6}@media print{svg{min-width:0}.diagram-container{overflow-x:visible}}</style></head><body><main><div class="diagram-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="architecture-title architecture-desc">
-<title id="architecture-title">VIEWE firmware paths</title>
-<desc id="architecture-desc">Separate toolchains target the same display board.</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4f5d75"/></marker></defs>
-<rect x="0" y="0" width="960" height="600" fill="#f5f5f5"/>
-<text x="40" y="48" font-family="Instrument Serif, Georgia, serif" font-size="28" fill="#2d3142">VIEWE firmware paths</text>
-<text x="40" y="76" font-family="Geist, Arial, sans-serif" font-size="11" fill="#5a6580">Separate toolchains target the same display board.</text>
-<path d="M 352,184 H 264" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 152,224 V 272 Q 152,280 160,280 H 456 Q 464,280 464,288 V 344" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 264,384 H 352" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 576,384 H 688" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 800,344 V 224" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 800,464 V 424" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<g data-node="ESP-IDF demos"><rect x="40" y="144" width="224" height="80" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="56" y="162" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">SOURCE</text>
-<text x="56" y="184" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">ESP-IDF demos</text>
-<text x="56" y="202" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">LVGL / Brookesia / FluidBox</text>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Many sketches. One round canvas.</title><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Geist:wght@400;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><style>*{box-sizing:border-box}body{margin:0;padding:24px;background:#f5f5f5;color:#2d3142;font-family:Geist,Arial,sans-serif}main{max-width:1280px;margin:auto;min-width:0}.diagram-container{width:100%;overflow-x:auto}svg{display:block;width:100%;min-width:1280px}p{max-width:75ch;line-height:1.6}@media print{svg{min-width:0}.diagram-container{overflow:visible}}</style></head><body><main><div class="diagram-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="architecture-title architecture-desc">
+<title id="architecture-title">Many sketches. One round canvas.</title>
+<desc id="architecture-desc">Independent firmware projects converge on the ESP32-S3 display board.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4f5d75"/></marker><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="0.7" fill="#bfc0c0" opacity="0.45"/></pattern></defs>
+<rect x="0" y="0" width="1280" height="720" rx="0" fill="#f5f5f5" stroke="#f5f5f5" />
+<rect x="24" y="180" width="1232" height="440" rx="0" fill="url(#dots)" stroke="none" />
+<text x="48" y="40" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#4f5d75">EMBEDDED / VIEWE</text>
+<text x="48" y="100" font-family="Instrument Serif, Georgia, serif" font-size="40" font-weight="400" fill="#2d3142">Many sketches. One round canvas.</text>
+<text x="48" y="140" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="400" fill="#4f5d75">Independent firmware projects converge on the ESP32-S3 display board.</text>
+<path d="M 48 168 H 1232" fill="none" stroke="#bfc0c0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 328 284 H 432 Q 440 284 440 292 V 332 Q 440 340 448 340" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 328 488 H 392 Q 400 488 400 480 V 452 Q 400 444 408 444 H 448" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 768 380 H 888" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<g data-node="ESP-IDF projects">
+<rect x="48" y="212" width="280" height="144" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.5"/>
+<text x="72" y="244" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#2d3142">ESP-IDF projects</text>
+<text x="72" y="268" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#4f5d75">Shared BSP + components</text>
+<rect x="80" y="288" width="216" height="52" rx="4" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 80 304 H 296" fill="none" stroke="#4f5d75" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="92" cy="296" r="2" fill="#4f5d75"/>
+<circle cx="102" cy="296" r="2" fill="#4f5d75"/>
+<circle cx="112" cy="296" r="2" fill="#4f5d75"/>
+<path d="M 96 316 H 272" fill="none" stroke="#4f5d75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<g data-node="Shared BSP"><rect x="352" y="144" width="224" height="80" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="368" y="162" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">DEPENDENCY</text>
-<text x="368" y="184" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Shared BSP</text>
-<text x="368" y="202" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">VIEWE-Demos components</text>
+<g data-node="Arduino sketches">
+<rect x="48" y="416" width="280" height="144" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.5"/>
+<text x="72" y="448" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#2d3142">Arduino sketches</text>
+<text x="72" y="472" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#4f5d75">Images / animation / touch</text>
+<rect x="80" y="492" width="216" height="52" rx="4" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 80 508 H 296" fill="none" stroke="#4f5d75" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="92" cy="500" r="2" fill="#4f5d75"/>
+<circle cx="102" cy="500" r="2" fill="#4f5d75"/>
+<circle cx="112" cy="500" r="2" fill="#4f5d75"/>
+<path d="M 96 520 H 272" fill="none" stroke="#4f5d75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<g data-node="Arduino sketches"><rect x="40" y="344" width="224" height="80" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="56" y="362" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">SOURCE</text>
-<text x="56" y="384" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Arduino sketches</text>
-<text x="56" y="402" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">Animations / images / touch</text>
+<g data-node="ESP32-S3">
+<rect x="448" y="280" width="320" height="224" rx="6" fill="#f2e7e2" stroke="#bf4520" stroke-width="1.5"/>
+<text x="472" y="312" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#2d3142">ESP32-S3</text>
+<text x="472" y="336" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#4f5d75">Build + flash one project</text>
+<rect x="564.0" y="378.0" width="88" height="88" rx="4" fill="#f5f5f5" stroke="#bf4520" />
+<path d="M 554.0 392.6666666666667 H 564.0 M 652.0 392.6666666666667 H 662.0 M 578.6666666666666 368.0 V 378.0 M 578.6666666666666 466.0 V 476.0" fill="none" stroke="#bf4520" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 554.0 407.3333333333333 H 564.0 M 652.0 407.3333333333333 H 662.0 M 593.3333333333334 368.0 V 378.0 M 593.3333333333334 466.0 V 476.0" fill="none" stroke="#bf4520" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 554.0 422.0 H 564.0 M 652.0 422.0 H 662.0 M 608.0 368.0 V 378.0 M 608.0 466.0 V 476.0" fill="none" stroke="#bf4520" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 554.0 436.6666666666667 H 564.0 M 652.0 436.6666666666667 H 662.0 M 622.6666666666666 368.0 V 378.0 M 622.6666666666666 466.0 V 476.0" fill="none" stroke="#bf4520" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 554.0 451.3333333333333 H 564.0 M 652.0 451.3333333333333 H 662.0 M 637.3333333333334 368.0 V 378.0 M 637.3333333333334 466.0 V 476.0" fill="none" stroke="#bf4520" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="576.0" y="390.0" width="64" height="64" rx="2" fill="#f5f5f5" stroke="#bf4520" />
 </g>
-<g data-node="Build and flash"><rect x="352" y="344" width="224" height="80" rx="6" fill="#f2e7e2" stroke="#bf4520" stroke-width="1.8"/>
-<text x="368" y="362" fill="#bf4520" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">CORE</text>
-<text x="368" y="384" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Build and flash</text>
-<text x="368" y="402" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">USB serial / firmware image</text>
+<g data-node="CO5300 AMOLED">
+<rect x="888" y="212" width="344" height="348" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.5"/>
+<text x="912" y="244" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#2d3142">CO5300 AMOLED</text>
+<text x="912" y="268" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#4f5d75">466 × 466 / QSPI</text>
+<circle cx="1060.0" cy="416.0" r="122.0" fill="#f5f5f5" stroke="#4f5d75" stroke-width="2"/>
+<path d="M 1103.92 416.00 L 1105.23 420.45 L 1105.95 425.14 L 1105.93 429.93 L 1105.08 434.67 L 1103.36 439.18 L 1100.82 443.27 L 1097.54 446.81 L 1093.69 449.69 L 1089.44 451.87 L 1084.97 453.37 L 1080.46 454.28 L 1076.04 454.71 L 1071.78 454.83 L 1067.71 454.78 L 1063.81 454.69 L 1060.00 454.65 L 1056.19 454.69 L 1052.29 454.78 L 1048.22 454.83 L 1043.96 454.71 L 1039.54 454.28 L 1035.03 453.37 L 1030.56 451.87 L 1026.31 449.69 L 1022.46 446.81 L 1019.18 443.27 L 1016.64 439.18 L 1014.92 434.67 L 1014.07 429.93 L 1014.05 425.14 L 1014.77 420.45 L 1016.08 416.00 L 1017.81 411.85 L 1019.80 408.00 L 1021.87 404.43 L 1023.92 401.06 L 1025.89 397.77 L 1027.78 394.47 L 1029.64 391.09 L 1031.58 387.58 L 1033.71 383.97 L 1036.17 380.34 L 1039.05 376.81 L 1042.42 373.56 L 1046.28 370.77 L 1050.58 368.63 L 1055.20 367.27 L 1060.00 366.81 L 1064.80 367.27 L 1069.42 368.63 L 1073.72 370.77 L 1077.58 373.56 L 1080.95 376.81 L 1083.83 380.34 L 1086.29 383.97 L 1088.42 387.58 L 1090.36 391.09 L 1092.22 394.47 L 1094.11 397.77 L 1096.08 401.06 L 1098.13 404.43 L 1100.20 408.00 L 1102.19 411.85 L 1103.92 416.00" fill="none" stroke="#4f5d75" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1114.27 416.00 L 1115.56 421.47 L 1115.95 427.13 L 1115.33 432.78 L 1113.65 438.22 L 1110.97 443.24 L 1107.39 447.67 L 1103.10 451.38 L 1098.32 454.32 L 1093.25 456.52 L 1088.11 458.07 L 1083.04 459.11 L 1078.15 459.81 L 1073.45 460.35 L 1068.92 460.86 L 1064.48 461.44 L 1060.00 462.12 L 1055.39 462.84 L 1050.55 463.50 L 1045.46 463.93 L 1040.14 463.95 L 1034.69 463.36 L 1029.25 462.02 L 1024.04 459.82 L 1019.26 456.74 L 1015.13 452.82 L 1011.82 448.19 L 1009.45 443.02 L 1008.06 437.51 L 1007.61 431.89 L 1008.00 426.34 L 1009.05 421.02 L 1010.57 416.00 L 1012.36 411.31 L 1014.24 406.90 L 1016.09 402.68 L 1017.85 398.54 L 1019.51 394.36 L 1021.17 390.05 L 1022.94 385.59 L 1024.99 380.99 L 1027.46 376.36 L 1030.49 371.84 L 1034.16 367.65 L 1038.46 364.00 L 1043.35 361.11 L 1048.69 359.15 L 1054.31 358.24 L 1060.00 358.42 L 1065.55 359.64 L 1070.78 361.79 L 1075.56 364.70 L 1079.82 368.14 L 1083.57 371.90 L 1086.86 375.79 L 1089.82 379.66 L 1092.59 383.41 L 1095.29 387.04 L 1098.05 390.58 L 1100.91 394.13 L 1103.87 397.83 L 1106.85 401.79 L 1109.71 406.11 L 1112.25 410.85 L 1114.27 416.00" fill="none" stroke="#4f5d75" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1124.93 416.00 L 1125.84 422.48 L 1125.55 429.04 L 1124.03 435.42 L 1121.31 441.40 L 1117.55 446.76 L 1112.95 451.38 L 1107.74 455.18 L 1102.20 458.20 L 1096.54 460.52 L 1090.95 462.32 L 1085.54 463.77 L 1080.33 465.07 L 1075.28 466.37 L 1070.29 467.75 L 1065.24 469.25 L 1060.00 470.78 L 1054.46 472.22 L 1048.59 473.36 L 1042.41 473.98 L 1036.04 473.85 L 1029.64 472.81 L 1023.44 470.71 L 1017.70 467.54 L 1012.66 463.34 L 1008.51 458.26 L 1005.38 452.49 L 1003.34 446.29 L 1002.32 439.89 L 1002.22 433.53 L 1002.84 427.37 L 1003.96 421.52 L 1005.37 416.00 L 1006.85 410.77 L 1008.29 405.71 L 1009.62 400.72 L 1010.86 395.64 L 1012.11 390.40 L 1013.54 384.95 L 1015.32 379.33 L 1017.66 373.66 L 1020.69 368.10 L 1024.53 362.91 L 1029.17 358.33 L 1034.57 354.61 L 1040.57 351.95 L 1046.97 350.49 L 1053.53 350.26 L 1060.00 351.22 L 1066.18 353.23 L 1071.92 356.10 L 1077.12 359.57 L 1081.79 363.40 L 1086.00 367.36 L 1089.87 371.30 L 1093.55 375.12 L 1097.20 378.80 L 1100.93 382.41 L 1104.79 386.07 L 1108.78 389.93 L 1112.78 394.14 L 1116.63 398.82 L 1120.10 404.04 L 1122.95 409.80 L 1124.93 416.00" fill="none" stroke="#4f5d75" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1135.28 416.00 L 1135.45 423.43 L 1134.19 430.76 L 1131.57 437.71 L 1127.75 444.06 L 1122.95 449.65 L 1117.47 454.40 L 1111.59 458.34 L 1105.56 461.56 L 1099.60 464.25 L 1093.81 466.60 L 1088.23 468.81 L 1082.80 471.05 L 1077.41 473.41 L 1071.91 475.88 L 1066.15 478.39 L 1060.00 480.77 L 1053.42 482.77 L 1046.45 484.13 L 1039.19 484.61 L 1031.84 483.98 L 1024.67 482.11 L 1017.94 478.95 L 1011.93 474.58 L 1006.86 469.14 L 1002.89 462.87 L 1000.07 456.04 L 998.36 448.95 L 997.61 441.84 L 997.63 434.92 L 998.16 428.30 L 998.98 422.01 L 999.86 416.00 L 1000.68 410.16 L 1001.37 404.34 L 1001.98 398.40 L 1002.63 392.24 L 1003.52 385.81 L 1004.87 379.17 L 1006.91 372.43 L 1009.81 365.81 L 1013.69 359.57 L 1018.57 354.00 L 1024.39 349.38 L 1030.98 345.94 L 1038.10 343.82 L 1045.49 343.06 L 1052.87 343.62 L 1060.00 345.35 L 1066.70 348.00 L 1072.87 351.32 L 1078.50 355.02 L 1083.67 358.87 L 1088.50 362.68 L 1093.17 366.35 L 1097.84 369.90 L 1102.62 373.38 L 1107.57 376.96 L 1112.67 380.81 L 1117.79 385.11 L 1122.72 390.02 L 1127.21 395.61 L 1130.98 401.88 L 1133.75 408.74 L 1135.28 416.00" fill="none" stroke="#4f5d75" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1144.71 416.00 L 1143.84 424.26 L 1141.44 432.20 L 1137.69 439.57 L 1132.86 446.18 L 1127.26 451.95 L 1121.20 456.90 L 1114.98 461.12 L 1108.82 464.82 L 1102.83 468.19 L 1097.05 471.45 L 1091.41 474.77 L 1085.78 478.23 L 1079.97 481.83 L 1073.82 485.46 L 1067.18 488.91 L 1060.00 491.91 L 1052.30 494.15 L 1044.22 495.35 L 1035.96 495.26 L 1027.81 493.72 L 1020.07 490.69 L 1013.06 486.25 L 1007.02 480.56 L 1002.11 473.89 L 998.40 466.55 L 995.85 458.86 L 994.31 451.11 L 993.55 443.52 L 993.32 436.23 L 993.36 429.26 L 993.44 422.56 L 993.43 416.00 L 993.29 409.43 L 993.07 402.69 L 992.93 395.65 L 993.10 388.29 L 993.84 380.64 L 995.42 372.85 L 998.04 365.15 L 1001.85 357.85 L 1006.86 351.25 L 1013.00 345.67 L 1020.10 341.35 L 1027.88 338.47 L 1036.06 337.07 L 1044.30 337.09 L 1052.35 338.36 L 1060.00 340.63 L 1067.13 343.60 L 1073.73 346.97 L 1079.87 350.49 L 1085.70 353.96 L 1091.39 357.28 L 1097.11 360.46 L 1102.99 363.62 L 1109.08 366.92 L 1115.35 370.58 L 1121.64 374.82 L 1127.73 379.80 L 1133.32 385.63 L 1138.09 392.31 L 1141.73 399.74 L 1143.99 407.73 L 1144.71 416.00" fill="none" stroke="#4f5d75" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1152.69 416.00 L 1150.65 424.93 L 1147.13 433.33 L 1142.42 441.00 L 1136.87 447.84 L 1130.83 453.86 L 1124.60 459.17 L 1118.43 463.95 L 1112.45 468.45 L 1106.67 472.86 L 1101.01 477.37 L 1095.31 482.06 L 1089.37 486.90 L 1082.98 491.76 L 1075.99 496.40 L 1068.32 500.51 L 1060.00 503.74 L 1051.16 505.78 L 1042.03 506.34 L 1032.93 505.25 L 1024.18 502.47 L 1016.13 498.07 L 1009.05 492.25 L 1003.13 485.30 L 998.43 477.57 L 994.92 469.41 L 992.44 461.14 L 990.75 453.02 L 989.58 445.17 L 988.65 437.64 L 987.75 430.37 L 986.72 423.22 L 985.55 416.00 L 984.31 408.55 L 983.20 400.72 L 982.48 392.48 L 982.45 383.88 L 983.42 375.07 L 985.63 366.31 L 989.23 357.92 L 994.26 350.26 L 1000.63 343.66 L 1008.15 338.40 L 1016.52 334.66 L 1025.41 332.48 L 1034.46 331.82 L 1043.38 332.47 L 1051.94 334.17 L 1060.00 336.60 L 1067.54 339.44 L 1074.64 342.41 L 1081.44 345.31 L 1088.15 348.05 L 1094.92 350.66 L 1101.91 353.27 L 1109.16 356.10 L 1116.62 359.38 L 1124.12 363.38 L 1131.41 368.29 L 1138.15 374.23 L 1143.99 381.21 L 1148.59 389.13 L 1151.67 397.76 L 1153.06 406.83 L 1152.69 416.00" fill="none" stroke="#4f5d75" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<g data-node="ESP32-S3"><rect x="688" y="344" width="224" height="80" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="704" y="362" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">DEVICE</text>
-<text x="704" y="384" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">ESP32-S3</text>
-<text x="704" y="402" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">VIEWE-ROUND-V1.1</text>
-</g>
-<g data-node="CO5300 display"><rect x="688" y="144" width="224" height="80" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="704" y="162" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">DEVICE</text>
-<text x="704" y="184" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">CO5300 display</text>
-<text x="704" y="202" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">QSPI / 466 x 466</text>
-</g>
-<g data-node="Touch and motion"><rect x="688" y="464" width="224" height="60" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="704" y="478" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">INPUT</text>
-<text x="704" y="500" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Touch and motion</text>
-<text x="704" y="518" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">I2C / board-dependent</text>
-</g>
-<line x1="40" y1="548" x2="920" y2="548" stroke="#4f5d75" stroke-width="0.7"/>
-<text x="40" y="568" font-family="Geist, Arial, sans-serif" font-size="10" fill="#5a6580">One firmware runs at a time. The spectrum demo has an unresolved microphone limitation.</text>
-<text x="40" y="588" font-family="Geist Mono, Consolas, monospace" font-size="8" fill="#5a6580">ARROWS: DATA OR DEPENDENCY DIRECTION   /   SOURCE: REPOSITORY FILES</text>
+<text x="48" y="652" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="400" fill="#2d3142">Touch / motion: I²C peripherals, depending on the selected board and firmware.</text>
+<path d="M 48 676 H 1232" fill="none" stroke="#bfc0c0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="48" y="700" font-family="Geist, Arial, sans-serif" font-size="12" font-weight="400" fill="#4f5d75">Separate toolchains • one firmware at a time • microphone support varies by demo</text>
 </svg></div></main></body></html>
