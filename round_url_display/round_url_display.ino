@@ -29,8 +29,8 @@ constexpr uint16_t BLACK = RGB565_BLACK;
 constexpr uint16_t WHITE = RGB565_WHITE;
 
 // ===================== USER CONFIG =====================
-const char *WIFI_SSID = "N Network";
-const char *WIFI_PASS = "miv48w55";
+const char *WIFI_SSID = "YOUR_WIFI_SSID";
+const char *WIFI_PASS = "YOUR_WIFI_PASSWORD";
 
 // >>> PUT YOUR IMAGE / GIF LINK HERE (direct link to the file, http or https) <<<
 const char *IMAGE_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxq9gwoQ5fDxCIBRcW34aNcGVX-N7gCf9LlgGUo6ceA&s=10";
