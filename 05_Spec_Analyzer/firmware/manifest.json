@@ -1,0 +1,23 @@
+{
+  "board": "VIEWE-ROUND-V1.1 / CO5300 / ESP32-S3 N16R8",
+  "project": "05_Spec_Analyzer",
+  "flash_settings": {
+    "flash_mode": "dio",
+    "flash_size": "16MB",
+    "flash_freq": "80m"
+  },
+  "files": {
+    "0x0": {
+      "file": "bootloader.bin",
+      "sha256": "598325868feda741947cc1b84e79bbc52177f6d0526b4283365661657d36aea4"
+    },
+    "0x8000": {
+      "file": "partition-table.bin",
+      "sha256": "d3e6663d9cbd407623c82f215df58a5c9bd1e353fd937ad519018c06fd9298fb"
+    },
+    "0x10000": {
+      "file": "lvgl_demo_v9.bin",
+      "sha256": "80ae2576aa8b247980167ce9e1e6e729fd1f4c8f17e47d40746d72136a06c68a"
+    }
+  }
+}
