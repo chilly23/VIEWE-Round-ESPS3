@@ -1,0 +1,1276 @@
+www.chinasunyee.com
+电话：400-660-3306
+Page: 1 / 26
+LCD MODULE
+SPECIFICATION
+Model:
+ALL-UE015WV-RB24-A021A
+Version:
+V1.0
+Date:
+2024.08.20
+Customer Confirmation 客户确认
+Approved by
+Notes
+Please return one of the copies of the specification with your signature to us within two weeks after you receive
+this document. If it is not returned, we will assume that you agree to the entire contents of this specification document.
+请贵司在收到规格书的两周内，将签好字的规格书原件或者复印件寄回.如果没有返回，我司将会认为贵司
+已经默认接受产品规格书中的全部资料和规范.
+VIEWE Confirmation 优奕确认
+Prepared by
+Reviewed by
+Approved by
+www.chinasunyee.com
+电话：400-660-3306
+Page: 2 / 26
+REVISION HISTORY 修改履历
+Revision
+版本号
+Date
+日期
+Contents of Revision Change
+修改内容
+Remark
+备注
+V1.0
+2024.08.20
+Preliminary release
+www.chinasunyee.com
+电话：400-660-3306
+Page: 3 / 26
+TABLE of CONTENTS
+目录
+1. GENERAL INFORMATION 一般信息....................................................................4
+2. ABSOLUTE MAXIMUM RATINGS 绝对最大额定值..............................................5
+3. MECHANICAL DRAWING 结构图纸..................................................................... 6
+4. I/O CONNECTION 输入/输出连接定义........................................................................7
+5. ELECTRICAL CHARACTERISTICS 电气特性.....................................................8
+5.1 TFT-LCD Panel Driving Section 面板驱动部分.....................................................8
+5.2 Power On/Off Sequence 电源开/关顺序................................................................. 9
+5.3 Timing Diagram 时序图...................................................................................11
+6. OPTICAL CHARACTERISTICS 光学特性......................................................12
+7. RELIABILITY 可靠性实验规范......................................................................... 15
+8. SPECIFICATION OF QUALITY ASSURANCE 质量保证规范...................16
+9. HANDLING PRECAUTION 操作注意事项....................................................25
+10. PACKAGE DRAWING 包装图.........................................................................26
+www.chinasunyee.com
+电话：400-660-3306
+Page: 4 / 26
+1. GENERAL INFORMATION
+一般信息
+Item
+项目
+Specification
+规格
+Unit
+单位
+Remark
+备注
+Pixel Driving element
+AMOLED
+-
+-
+Screen Size 屏幕尺寸
+1.51
+Inch
+Diagonal
+Resolution 分辨率
+466*466
+Dots
+-
+Module Power Consumption
+模块功率
+-
+Watt
+Active Area 显示区尺寸
+38.3052*38.3052
+mm
+-
+Pixel pitch (W*H) 像素间距
+82.2
+mm
+-
+Module Size (W*H*D)
+模组外形尺寸
+44.3(W)*44.3(H)*2.405(D)
+mm
+Driver IC 控制IC
+CO5300AF-42
+-
+Interface Mode 接口类型
+QSPI
+-
+Display mode 显示模式
+Normal Black
+-
+Luminance 亮度
+450
+cd/m2
+Typ.
+Viewing Direction 视角
+ALL
+O’clock
+-
+Display Color 显示颜色
+16.7M
+Colors
+24bits
+LED life time
+LED灯寿命
+-
+-
+www.chinasunyee.com
+电话：400-660-3306
+Page: 5 / 26
+2. ABSOLUTE MAXIMUM RATINGS
+绝对最大额定值
+(Ta=+25°C,GND=0V)
+Note1:If the module exceeds the absolute maximum ratings, it may be damaged permanently. Also
+if the module operates with the absolute maximum ratings for a long time, the reliability may
+drop.
+注1：如果模块超过绝对最大额定值，则可能会永久损坏。此外，如果模块长时间以绝对最大
+额定值运行，可靠性可能会下降。
+Note2: In case of temperature below 0℃,the response time of liquid crystal (LC) becomes slower
+and the color of panel darker than normal one.
+注2：在温度低于0℃的情况下，液晶（LC）的响应时间会变慢，面板的颜色也会比正常颜色
+暗。
+Note3: Temp. ≤60℃, 90% RH MAX.
+Temp. ＞60℃, Absolute humidity shall be less than 90% RH.
+注3：温度≤60℃，最大相对湿度90%。
+温度＞60℃，绝对湿度应小于90%RH。
+Item
+项目
+Symbol
+符号
+Min.
+最小值
+Max.
+最大值
+Unit
+单位
+Remark
+备注
+Power supply voltage
+VCI
+-0.3
+5.5
+V
+Note1
+Power supply voltage
+IOVCC
+-0.3
+5.5
+V
+Note1
+Operating temperature
+Top
+-30
+80
+°C
+Note1,2
+Storage temperature
+Tst
+-40
+70
+°C
+Note1,2
+Humidity
+Hst
+10
+90
+%RH
+Note1,3
+www.chinasunyee.com
+电话：400-660-3306
+Page: 6 / 26
+3. MECHANICAL DRAWING
+结构图纸
+1.31
+40.41±0.3(Foam)
+40.34±0.3(Foam)
+40.94±0.15(Panel Outline)
+40.94±0.15(Encap Glass)
+38.31±0.1(AA . Area）
+40.71±0.15(Panel Outline)
+1.32
+0.07
+38.31±0.1(AA . Area)
+屏幕扫描方式（不支持反扫)
+0.705±0.1(Outline)(不含保护膜+FPC)
+0.200±0.05(ITO)
+0.150±0.1(POL)
+0.150±0.05(Foam)
+0.205±0.05(Encap)
+0.44
+0.705±0.1
+0.96±0.05
+37.36
+23.46±0.3
+带撕手位双面胶(T=0.05mm)
+钢片补强接地(T=0.1mm)
+双面EMI
+3.00
+3.00±0.3
+REX
+R151ASM-012-MFPC-V01
+元件区域
+0.7MAX
+露铜
+钢片补强接地(T=0.1mm)
+1
+80
+12
+1
+13
+24
+1
+单层弯折区
+27
+元件区域
+0.6MAX
+6
+1
+弯折区刷绿油
+钢片补强T=0.1MM 接地
+加贴T=0.05mm双面胶
+2.00±0.03
+2.73
+0.27
+0.40
+柔软区刷绿油
+6
+1
+0.20±0.03(FPC+PI补强)
+连接器:OK-14GM024-04
+OK-F401-06125
+连接器高度0.9±0.1
+1.85±0.2
+FPC+PI补强
+总厚0.2mm
+双面EMI
+此处弯折软化处理
+TP IC高度=
+元器件0.6max+0.05锡膏+
+0.15FPC+0.15钢片（含胶）
++双面粘0.05+保护纸0.05
+=1.02max（高于PET）
+钢片补强T=0.2,GND
+器件区域高度=
+元器件0.7max+0.05锡膏
++0.15钢片（含胶）
++0.15FPC+双面粘0.05+保护纸0.05
+=1.15max（高于PET）
+元器件需点胶，点胶高度
+不超器件表面
+1
+27
+QC1108B1F23-143-NA
+REX
+R151ASM-012-MFPC-V01
+元件区域
+0.7MAX
+露铜
+元件区域
+0.6MAX
+6
+1
+0.9 MAX
+0.75 MAX
+6.56±0.3
+5.37±0.3
+填充区域丝
+印黑色油墨
+透明视窗
+表面镀AF
+44.30±0.04
+38.51±0.1
+0.49±0.05
+CG:1.50±0.05
+R0.30
+R0.20
+四周倒C角
+1.1*1.1
+ATC 2.405±0.15
+CO5300AF-42
+CO5300AF-42
+44.30±0.04(OD)
+38.51±0.1 VA
+38.51±0.1 VA
+2.90±0.1
+2.90±0.1
+44.30±0.04(OD)
+3.50
+7.30
+IO口电压1.8V
+TP FPC PIN DESCRIPTION
+PIN NAME
+NO.
+1
+2
+3
+4
+5
+6
+GND
+TP_SCL
+TP_SDA
+TP_INT
+TP_VCC
+TP_RST
+Specification:
+ 1). Display mode: 1.51" 466*466 16.7M Colors AMOLED;
+ 2). Viewing angle: L88/R88/T88/B88 (Min);
+ 3). Operating temp.: -30°C~+80°C;
+    Storage temp.: -40°C~+70°C;
+ 4). IC: CO5300AF-42(Display);CST820(Touch);BV6802(Power)
+ 5). Interface: QSPI;Brightness: 450CD/M2(Type);
+ 6). General Tolerance:±0.20.
+ 7). Rohs Compliancy.
+ 8). Recommended Case Open Area should be less than Module V.A;
+www.chinasunyee.com
+电话：400-660-3306
+Page: 7 / 26
+4. I/O CONNECTION 输入/输出连接定义
+Pin No.
+序号
+Symbol
+符号
+I/O
+Description
+描述
+1
+VCI_EN
+P
+Power supply
+2
+NC
+-
+-
+3
+NC
+-
+-
+4
+NC
+-
+5
+QSPI_SI03
+I
+QSPI Data3 input pin
+6
+QSPI_SI02
+I
+QSPI Data2 input pin
+6
+QSPI_SI01
+I
+QSPI Data1 input pin
+7
+QSPI_SI00
+I/O
+QSPI Data0 input pin
+9
+NC
+-
+-
+10
+SCL
+I
+SPI pclk input signal
+11
+NC
+-
+-
+12
+CS
+I
+Chip selection pin. Low-active
+13
+GND
+P
+Power Ground
+14
+TE
+O
+Tearing effect signal is used to synchronize MCU to frame memory
+15
+IOVCC
+P
+Power supply to the internal logic power regulator
+16
+MTP(NC）
+-
+-
+17
+VBAT
+P
+Power supply
+18
+RST
+I
+The signal will reset the LCM, Signal is active low.
+19
+TP_SCL
+I
+I2C clock signals for CTP
+20
+TP_SDA
+I/O
+I2C data signal for CTP
+21
+TP_RST
+I
+The signal will reset the CTP,Signal is active low
+www.chinasunyee.com
+电话：400-660-3306
+Page: 8 / 26
+22
+TP_INT
+I
+Interrupt signals for CTP
+23
+TP_VCC
+P
+Power supply for TP
+24
+GND
+P
+Power Ground
+I：Input；O：Output；P：Power
+5. ELECTRICAL CHARACTERISTICS 电气特性
+5.1 Panel Driving Section 面板驱动部分
+(Ta=+25°C,GND=0V)
+Note1:Measurement Conditions (Video Mode): Full Screen Red Pattern,VCI=3.3V,60Hz Refresh.
+Item
+项目
+Symbol
+符号
+Min.
+最小值
+Typ.
+典型值
+Max.
+最大值
+Unit
+单位
+Remark
+备注
+Power Supply Voltage
+VCI_IN
+2.7
+3.3
+3.6
+V
+-
+Power Supply Voltage
+IOVCC
+1.65
+1.8
+3.3
+mA
+Note1
+Logic Input High Voltage
+VIH
+0.7IOVCC
+-
+IOVCC
+V
+-
+Logic Input Low Voltage
+VIL
+0
+-
+0.3IOVCC
+V
+-
+Panel Power Consumption
+PVDD
+-
+-
+-
+Watt
+Note1
+Module Power Consumption
+PLCM
+-
+-
+-
+Watt
+www.chinasunyee.com
+电话：400-660-3306
+Page: 9 / 26
+5.2 Power On/Off Sequence 电源开/关顺序
+www.chinasunyee.com
+电话：400-660-3306
+Page: 10 / 26
+www.chinasunyee.com
+电话：400-660-3306
+Page: 11 / 26
+5.3 Timing Diagram 时序图
+QSPI Interface characteristics
+www.chinasunyee.com
+电话：400-660-3306
+Page: 12 / 26
+6. OPTICAL CHARACTERISTICS 光学特性
+Parameter
+参数
+Symbol
+符号
+Condition
+条件
+Min.
+最小值
+Typ.
+典型值
+Max.
+最大值
+Unit
+单位
+Remark
+备注
+Contrast Ratio
+对比度
+C/R
+= 0
+10000
+-
+-
+-
+Note(4)
+NTSC Ratio
+色域
+S
+=0
+95
+100
+-
+%
+Note(7)
+Luminance
+uniformity
+亮度均匀度
+UW
+=0
+90
+-
+-
+
+Note(3)
+Response Time
+响应时间
+TR+ TF
+25 C
+-
+-
+2
+ms
+Note(2)
+Color
+Coordination
+色坐标
+WX
+= 0
+(Center)
+Normal
+viewing
+angle
+B/L On
+-0.03
+0.300
++0.03
+NTSC
+(x,y)
+Note(6)
+WY
+0.310
+RX
+0.680
+RY
+0.32
+GX
+0.245
+Gy
+0.715
+BX
+0.141
+BY
+0.045
+Viewing Angle
+可视角度
+θL
+C/R10
+80
+-
+-
+Degree
+Note(1)
+θR
+80
+-
+-
+θU
+80
+-
+-
+θD
+80
+-
+-
+www.chinasunyee.com
+电话：400-660-3306
+Page: 13 / 26
+Test Conditions 测试条件:
+1. VDD=3.3V,, the ambient temperature is+25℃.
+2. The test systems refer to Note 8.
+Note1: Definition of Viewing Angle: The viewing angle range that the CR10
+注1：视角的定义：CR10 的视角范围
+Note2: Definition of Response time: Sum of TR and TF
+注2：响应时间的定义：TR 和TF 之和
+Note 3: Definition of Luminance Uniformity: Active area is divided into 9 measuring areas,
+every measuring point is placed at the center of each measuring area.
+注3：亮度均匀性的定义：有效区域分为9 个测量区域，每个测量点都位于每个测量区域的中心。
+Luminance Uniformity =
+x100%
+Min Luminance of white among 9-points
+Max Luminance of white among 9-points
+www.chinasunyee.com
+电话：400-660-3306
+Page: 14 / 26
+Note4: Definition of Contrast Ratio (CR): measured at the center point of panel
+注4：对比度（CR）的定义：在面板中心点测量
+Note 5: Definition of Luminance: Center Luminance of white is defined as luminance values of
+1point average across the LCD surface.
+注5：亮度的定义：白色的中心亮度定义为LCD表面1点平均的亮度值。
+Note 6: Definition of Color Chromaticity (CIE 1931)
+Color coordinates of white & red, green, blue measured at center point of LCD.
+注6：颜色色度的定义（CIE 1931）
+在LCD 中心点测量的白色和红色、绿色、蓝色的颜色坐标。
+Note 7: Definition of NTSC ratio:
+注7:NTSC 比率的定义：
+Note 8: Definition of
+optical measurement system.
+注8：光学测量系统的定义。
+The optical characteristics should be measured in dark room. After 5 minutes operation, the
+optical properties are measured at the center point of the LCD screen.(Response time is measured by
+Photo detector TOPCON BM-7, Field of view: 1°/Height: 500mm.)
+光学特性应在暗室中测量。操作5分钟后，在LCD屏幕的中心点测量光学特性。（响应时
+间由光电探测器TOPCON BM-7测量，视场：1°/高度：500mm。）
+www.chinasunyee.com
+电话：400-660-3306
+Page: 15 / 26
+7. RELIABILITY 可靠性实验规范
+Item
+项目
+Test Condition
+测试条件
+Remark
+备注
+High Temperature Storage 高温存储
+Ta =+70°C / 96Hours
+Note1,2,3
+Low Temperature Storage 低温存储
+Ta =-40°C / 96Hours
+Note1,2,3
+High Temperature Operating 高温工作
+Ta =+80°C / 96Hours
+Note1,2,3
+Low Temperature Operating 低温工作
+Ta =-30°C / 96Hours
+Note1,2,3
+Temperature Cycle storage Test 冷热冲击
+-40°C/30min +70°C /30min for
+30cycles,Transfer time less than 5min
+Note2,3
+Thermal humidity storage Test
+高温高湿存储
+60°C x 90%RH / 96Hours
+Note2,3
+Package Vibration Test
+包装震动
+Frequency:
+10Hz~55Hz,Amplitude:1.5mm, 1 hrs
+for each direction of X, Y, Z
+Note2
+Packing shock test
+包装跌落
+Drop to the ground from 60cm height,
+1 corner, 3 edges, 6 surfaces.
+Note2
+Inspection after Test 试验后检查:
+Note1:Ta is the ambient temperature of samples.
+注1:Ta是样品的环境温度。
+Note 2: In the standard condition, there shall be no practical problem that may affect the display
+function. After the reliability test, the product only guarantees operation, but doesn’t guarantee all the
+cosmetic specification.
+注2：在标准条件下，不存在可能影响显示功能的实际问题。可靠性测试后，产品仅保证运行
+工作，但不保证产品的所有规格。
+Note 3: Before cosmetic and function tests , the product must have enough recovery time, at least 2
+hours at room temperature.
+注3：在进行外观和功能测试之前，产品必须有足够的恢复时间，在室温下至少2小时。
+Note 4: In case of malfunction defect caused by ESD damage, if it would be recovered to normal
+state after resetting, it would be judged as a good part.
+注4：如果ESD损坏导致故障缺陷，如果重置后恢复正常状态，则判定为良好零件。
+www.chinasunyee.com
+电话：400-660-3306
+Page: 16 / 26
+8. Specification of Quality Assurance
+质量保证规范:
+8-1. Purpose 目的
+This standard for Quality Assurance should affirm the quality of LCD module products to supply to
+purchaser by VIEWE.
+本质量保证标准应确认VIEWE 向买方供应的LCD 模块产品的质量。
+8-2. Standard for Quality Test 质量检验标准
+a. Inspection 检查:
+Before delivering, the supplier should take the following tests, and affirm the quality of product.
+在交货前，供应商应进行下列试验，并确认产品质量。
+b. Electro-Optical Characteristics 光电特性:
+According to the individual specification to test the product. 根据个别规格对产品进行测试。.
+c. Test of Appearance Characteristics 外观特性试验:
+According to the individual specification to test the product. 根据个别规格对产品进行测试。
+d. Test of Reliability Characteristics 可靠性特性试验:
+According to the definition of reliability on the specification for testing products.
+根据测试产品规范中可靠性的定义。
+e. Delivery Test 出厂试验:
+Before delivering, the supplier should take the delivery test. 交货前，供货商应进行出厂试验。
+(i) Test method: According to ISO2859-1. General Inspection Level Ⅱtake a single time.
+(i) 试验方法：按ISO2859-1。一般检验二级一次
+(ii) The defects classify of AQL as following
+AQL 的缺陷分类如下:
+Major defect 重大缺陷: AQL = 0.65
+Minor defect 轻微缺陷: AQL = 2.5
+Total defects 全部缺陷: AQL = 2.5
+8-3. Non- conforming Analysis & Deal With Manners
+不合格分析及处理方式
+a. Non- conforming Analysis 不合格分析:
+(i)
+Purchaser should supply the detail data of non- conforming sample and the non- conforming.
+(i)
+买方应提供不合格样品和不合格品的详细资料。
+(ii)
+After accepting the detail data from purchaser, the analysis of non- conforming should be finished in
+two weeks.
+(ii) 接受买方的详细资料后，不合格分析应在两周内完成。
+(iii)
+If supplier can not finish analysis on time, must announce purchaser before 3 days.
+(iii) 如果供应商不能按时完成分析，必须在3 天前通知买方。
+b. Disposition of non- conforming 不合格品的处置:
+(i) If find any product defect of supplier during assembly time, supplier must change the good product for
+every defect after recognition.
+(i) 如果在装配过程中发现供应商的任何产品缺陷，供应商必须在确认后对每一个缺陷更换好的产品.
+(ii) Both supplier and customer should analyze the reason and discuss the disposition of non- conforming
+when the reason of nonconforming is not sure.
+(ii) 当不合格原因不确定时，供需双方应分析原因并讨论不合格的处理.
+www.chinasunyee.com
+电话：400-660-3306
+Page: 17 / 26
+8-4. Agreement items 协议项目
+Both sides should discuss together when the following problems happen.
+出现下列问题时，双方应共同讨论。
+a.
+There is any problem of standard of quality assurance, and both sides should think that must be
+modified.
+质量保证标准有问题，双方都认为必须修改
+b.
+There is any argument item which does not record in the standard of quality assurance.
+有不在质量保证标准中记录的论证项目。
+c.
+Any other special problem.
+其他特殊问题。
+8-5. Standard of The Product Appearance Test
+产品外观检验标准
+a. Manner of appearance test 外观试验方式:
+(i) The test must be under 20W × 2 or 40W fluorescent light, and the distance of view must be at
+30±5cm.
+(i) 试验必须在20W×2 或40W 荧光灯下进行，视距必须在30±5cm.
+(ii) When test the model of transmissive product must add the reflective plate.
+(ii) 测试透射产品型号时必须加反射板.
+(iii)The test direction is base on around 10° of vertical line.
+(iii) 试验方向以10°左右的垂直线为基准.
+(iiii)Temperature: 25±5℃
+Humidity: 60±10%RH
+(iiii) 温度: 25±5℃
+湿度60±10%RH
+eyes
+eyes
+10°
+10°
+www.chinasunyee.com
+电话：400-660-3306
+Page: 18 / 26
+(iv) Definition of area 区域定义:
+A. Area: Viewing area.
+区域：观察区域
+B.
+Area: Out of viewing area.
+区域：不在视野范围内。
+(Outside viewing area)
+(外部观察区域)
+b. Basic principle: 基本原则:
+(i) It will accord to the AQL when the standard can not be described.
+(i) 当标准无法描述时，将符合AQL.
+(ii) The sample of the lowest acceptable quality level must be discussed by both supplier and customer when
+any dispute happened.
+(ii) 当发生任何争议时，供应商和客户必须讨论最低可接受质量水平的样品.
+(iii) Must add new item on time when it is necessary.
+(iii) 必要时必须按时添加新项目.
+c. Standard of inspection 检验标准: (Unit: mm)
+A
+B
+www.chinasunyee.com
+电话：400-660-3306
+Page: 19 / 26
+8-6. Inspection specification 检验规范
+Defect out of viewing area can be neglected 可视区域以外的缺陷可以忽略.
+NO
+Item
+Criterion
+AQL
+01
+Electrical Testing
+电气试验
+1.1 Missing vertical, horizontal segment, segment contrast defect.
+1.1 缺少垂直、水平段、段对比度缺陷。
+1.2 Missing character, dot or icon.
+1.2 缺少字符、圆点或图标。
+1.3 Display malfunction.
+1.3 显示故障
+1.4 No function or no display.
+1.4 无功能或无显示。
+1.5 Current consumption exceeds product specifications.
+1.5 电流消耗超过产品规格
+1.6 LCD viewing angle defect. 1.6 液晶显示器视角缺陷。
+1.7 Mixed product types.
+1.7 不同产品混料。
+1.8 Flicker
+1.8 闪烁
+0.65
+02
+Black or White
+spots
+or Bright
+spots or Color spots
+on LCD (Display
+only)
+LCD 上的黑点或白
+点或亮点或色斑
+（仅显示）
+2.1 White and black or color spots on display ≦0.25mm, no more than Five
+spots.
+2.1 显示器上的黑白或色斑≤0.25 毫米，不超过5 个。
+2.2 Densely spaced: No more than three spots within 3mm.
+2.2 密集间距：3mm 内不超过三处。
+2.5
+03
+LCD
+and
+Touch
+Panel
+black
+spots,
+white spots,
+contamination
+(non
+– display)
+LCD 和触摸屏黑
+点，白点，
+脏污（非显示区）
+3.1 Round type: As following drawing 圆形：如下图所示
+Φ = (X+Y) / 2
+* Densely spaced: No more than two spots within 3mm.
+密集间距：3mm 内不超过2 处.
+Size(mm)
+Acceptable Q'ty
+Φ≦0.10
+Accept no dense
+0.10< Φ≦0.20
+3
+0.20< Φ≦0.25
+2
+0.25< Φ≦0.30
+1
+0.30< Φ
+0
+2.5
+3.2 Line type: (As following drawing) 线型：（如下图所示）
+* Densely spaced: No more than two lines within 3mm.
+*密集间距：3mm 以内不超过两行。
+Length(mm)
+Width(mm)
+Acceptable Q'ty
+---
+W≦0.02
+Accept no dense
+L≦3.0
+0.02<W≦0.05
+2
+L≦2.5
+0.03<W≦0.15
+---
+0.15<W
+Rejection
+2.5
+www.chinasunyee.com
+电话：400-660-3306
+Page: 20 / 26
+NO
+Item
+Criterion
+AQL
+04
+Polarizer
+bubbles
+偏光片气泡
+If bubbles are visible, judge using black
+spot specifications, not easy to find,
+must check in specify direction
+如果气泡可见，用黑点判断规格，不
+容易找到，必须登记指定方向
+Size Φ(mm)
+Acceptable Q'ty
+Φ≦0.20
+Accept no dense
+0.20< Φ≦0.50
+3
+0.50< Φ≦1.00
+2
+1.00< Φ
+0
+Total Q’ty
+3
+2.5
+05
+Scratches 划痕
+Follow NO.3 -2 Line Type.
+遵循3.2 号线类型.
+06
+Chipped glass
+玻璃破损
+Symbols 符号:
+x: Chip length 缺损长度
+y: Chip width 缺损宽度
+z: Chip thickness 缺损厚度
+k: Seal width 封口宽度t: Glass thickness 玻璃厚度a: LCD side length 玻璃边长
+L: Electrode pad length 电极长度
+6.1 General glass chip 普通玻璃破损:
+6.1.1 Chip on panel surface and crack between panels :
+面板表面的缺损和面板之间的裂缝：
+⊙Unit: mm
+⊙If there are 2 or more chips, x is the total length of each chip
+如果有2 个或更多缺损，x 是每个缺损的总长度
+6.1.2 Corner crack 角破损:
+⊙Unit: mm
+⊙If there are 2 or more chips, x is the total length of each chip
+如果有2 个或更多缺损，x 是每个缺损的总长度
+z: Chip thickness
+y: Chip width
+x: Chip length
+Z≦1/2t
+Not over viewing are
+x≦1/8a
+1/2t< z≦2t
+Not exceed 1/3k
+x≦1/8a
+z: Chip thickness
+y: Chip width
+x: Chip length
+Z≦1/2t
+Not over viewing area
+x≦1/8a
+1/2t< z≦2t
+Not exceed1/3k
+x≦1/8a
+2.5
+www.chinasunyee.com
+电话：400-660-3306
+Page: 21 / 26
+NO
+Item
+Criterion
+AQL
+07
+Glass crack
+玻璃裂纹
+Symbols 符号:
+x: Chip length 缺损长度
+y: Chip width 缺损宽度
+z: Chip thickness 缺损厚度
+k: Seal width 封口宽度t: Glass thickness 玻璃厚度a: LCD side length 玻璃边长
+L: Electrode pad length 电极长度
+7.2 Protrusion over terminal 下玻璃突出部分:
+7.2.1 Chip on electrode pad 电极处破损:
+7.2.2 Non-conductive portion 非导电部分:
+⊙If there chipped area touches the ITO terminal, over 2/3 of the ITO must remain
+and be inspected according to electrode terminal specifications.
+如果有缺口区域接触到ITO 端子，则必须保留超过2/3 的ITO，并根据电极
+端子规范进行检查.
+⊙If the product will be heat sealed by the customer, the alignment mark must mot
+be damaged.
+如果产品将由客户热压，则对准标记不得损坏。
+7.2.3 Substrate protuberance and internal crack
+基体突起和内部裂纹
+y: Chip width
+x: Chip length
+z: Chip thickness
+y≦0.5mm
+x≦1/8a
+0< z≦t
+y: Chip width
+x: Chip length
+z: Chip thickness
+y≦L
+x≦1/8a
+0< z≦t
+y: width
+x: length
+y≦1/3L
+X≦a
+2.5
+www.chinasunyee.com
+电话：400-660-3306
+Page: 22 / 26
+NO
+Item
+Criterion
+AQL
+08
+Cracked glass
+玻璃破碎
+The LCD with extensive crack is not acceptable.
+不接受有大裂纹的液晶显示器。
+2.5
+09
+Backlight
+elements
+背光元件
+9.1 Illumination source flickers when lit. 光源点亮时闪烁。
+9.2 Spots or scratches that appear when lit must be judged.
+必须判断照明时出现的斑点或划痕。
+Using LCD spot, lines and contamination standards.
+采用液晶点、线和污染标准。
+9.3 Backlight doesn’t light or color is wrong. 背光不亮或颜色不对。
+2.5
+2.5
+0.65
+10
+Bezel 铁框
+Bezel must comply with product specifications. 铁框必须符合产品规范。
+2.5
+11
+PCB、COB
+11.1 COB seal may not have pinholes larger than 0.2mm or contamination.
+11.1 COB 密封不得有大于0.2 毫米的针孔或污染。
+11.2 COB seal surface may not have pinholes through to the IC.
+11.2 COB 密封表面可能没有针孔穿过IC。
+11.3 The height of the COB should not exceed the height indicated in the assembly
+diagram.
+11.3 COB 的高度不应超过装配图所示的高度。
+11.4 There may not be more than 2mm of sealant outside the seal area on PCB. And
+there should be no more than three places.
+11.4 印刷电路板密封区域外的密封剂不得超过2 毫米。不应该超过三个地方。
+11.5 Parts on PCB must be the same as on the production characteristic
+chart,
+There should be no wrong parts, missing parts or excess parts.
+11.5 印刷电路板上的零件必须与生产特性图上的零件相同，不得有错误零件、
+丢失零件或多余零件。
+11.6 The jumper on the PCB should conform to the product characteristic chart.
+11.6 PCB 上的跳线应符合产品特性图。
+2.5
+2.5
+2.5
+2.5
+0.65
+0.65
+12
+FPC
+12.1 FPC terminal damage ≦1/2 FPC terminal width and can not affect the
+function, we judge accept.
+FPC 端子损坏≤1/2 FPC 端子宽度且不影响功能，我们判断接受。
+12.2 FPC alignment hole damage ≦1/2 alignment area and can not affect the
+function, we judge accept.
+FPC 对准孔损坏≤1/2 对准面积且不能影响功能，我们判断接受。
+2.5
+2.5
+13
+Soldering
+焊接
+13.1 No cold solder joints, missing solder connections, oxidation or icicle.
+13.1 无虚焊、漏焊、氧化或凸柱。
+13.2 No short circuits in components on PCB or FPC.
+13.2 PCB 或FPC 上的组件无短路。
+2.5
+0.65
+www.chinasunyee.com
+电话：400-660-3306
+Page: 23 / 26
+NO
+Item
+Criterion
+AQL
+14
+Touch Panel
+Chipped glass
+触摸盖板玻
+璃缺损
+Symbols 符号:
+x: Chip length 缺损长度
+y: Chip width 缺损宽度
+z: Chip thickness 缺损厚度
+k: Seal width 封口宽度t: Glass thickness 玻璃厚度a: LCD side length 玻璃边长
+L: Electrode pad length 电极长度
+14.1 General glass chip 普通玻璃缺损:
+14.1.1 Chip on panel surface and crack between panels:
+玻璃表面缺损和玻璃直接的裂缝
+⊙Unit: mm
+⊙If there are 2 or more chips, x is the total length of each chip
+如果有2 个或更多缺损，x 是每个缺损的总长度
+14.1.2 Corner crack:
+⊙Unit: mm
+⊙If there are 2 or more chips, x is the total length of each chip
+如果有2 个或更多缺损，x 是每个缺损的总长度
+z: Chip thickness
+y: Chip width
+x: Chip length
+Z≦t
+≦1/2 k and not over
+viewing area
+x≦1/8a
+z: Chip thickness
+y: Chip width
+x: Chip length
+z≦t
+≦1/2 k and not over
+viewing area
+x≦1/8a
+2.5
+www.chinasunyee.com
+电话：400-660-3306
+Page: 24 / 26
+NO
+Item
+Criterion
+AQL
+15
+Touch
+Panel(Fish
+eye、dent and
+bubble on film)
+触摸屏（鱼眼、
+凹痕和薄膜上
+的气泡）
+SIZE(mm)
+Acceptable Q’ty
+Φ≦0.2
+Accept no dese
+0.2< D ≦0.4
+5
+0.4< D ≦0.5
+2
+0.5< D
+0
+2.5
+16
+Touch Panel
+Newton ring
+触摸屏牛顿环
+Newton ring dimension ≦1/2 touch panel area and not affect font and line
+distortion (≦2.5%), it is acceptable.
+牛顿环尺寸≤触摸屏面积的1/2，且不影响字体和线条失真（≤2.5%），是可
+以接受的。
+2.5
+17
+Touch Panel
+Linearity
+触摸屏线性
+Less than 2.5% is acceptable.
+低于2.5%是可以接受的。
+2.5
+18
+LCD Ripple
+LCD 水波纹
+Touch the touch panel, can not see the LCD ripple.
+触摸触摸屏，看不到液晶波纹。
+Pen: R 1.0mm silicon rubber
+笔：R 1.0mm 硅橡胶。.
+Operation Force: 80g
+操作力：80g
+2.5
+19
+General
+appearance
+整体外观
+19.1 Pin type must match type in specification sheet.
+19.1 引脚类型必须与规格表中的类型相匹配。
+19.2 LCD pin loose or missing pins.
+19.2 LCD 引脚松动或缺失。
+19.3 Product packaging must the same as specified on packaging specification
+sheet.
+19.3 产品包装必须与包装规格表上的规定相同。
+19.4 Product dimension and structure must conform to product specification sheet.
+19.4 产品尺寸和结构必须符合产品规格书。
+0.65
+0.65
+0.65
+0.65
+www.chinasunyee.com
+电话：400-660-3306
+Page: 25 / 26
+9. Handling Precaution
+操作注意事项:
+9-1 Handling of LCM 液晶显示屏的组装
+●
+Don't give external shock. 不要受到外来冲击。
+●
+Don't apply excessive force on the surface.
+不要在表面施加过大的力。
+●
+Liquid in LCD is hazardous substance. Must not lick and swallow. when the liquid is attach
+to your hand, skin, cloth etc. Wash it out thoroughly and immediately.
+液晶显示器中的液体是有害物质。不得舔舐和吞咽。当液体附着在手、皮肤、布等上
+时，立即彻底清洗。
+●
+Don't operate it above the absolute maximum rating.
+不要超过绝对最大额定值
+●
+Don't disassemble the LCM.
+不要拆解LCM
+●
+The operators should be grounded whenever he/she comes into contact with the module.
+Never touch any of the conductive parts such as the LSI pads,the copper leads on the PCB
+and the interface terminals with any parts of the human body.
+操作员在接触模块时应接地。切勿用人体任何部位接触LSI焊盘、PCB上的铜引线和
+接口端子等任何导电部件。
+●
+The modules should be kept in antistatic bags or other containers resistant to static for
+storage.
+模块应放在防静电袋或其他防静电容器中储存。
+●
+The module is coated with a film to protect the display surface. Be care when peeling off
+this protective film since static electricity may be generated.
+该模块表面有保护膜以保护显示表面。剥离此保护膜时要小心，因为可能会产生静电。
+9-2 Storage 存储
+●
+Store in an ambient temperature of 25±10℃, and in a relative humidity of 50±10%RH.
+Don't expose to sunlight or fluorescent light.
+储存在25±10℃的环境温度和50±10%相对湿度下。不要暴露在阳光或荧光灯下。
+●
+Storage in a clean environment, free from dust, active gas, and solvent.
+储存在清洁的环境中，无灰尘、活性气体和溶剂。
+●
+Store in anti-static electricity container.
+存放在防静电容器中。
+●
+Store without any physical load. 无任何物理负载储存。
+9-3 Soldering 焊接
+●
+Use only soldering irons with proper grounding and no leakage.
+只能使用接地正确、无泄漏的烙铁。
+●
+Iron: No higher than 280±10℃and less than 3 sec during Hand soldering.
+烙铁：手工焊接时温度不高于280±10℃，时间不超过3秒。
+●
+Rewiring: no more than 2 times.
+重新焊接：不超过2次
+www.chinasunyee.com
+电话：400-660-3306
+Page: 26 / 26
+10. PACKAGE DRAWING

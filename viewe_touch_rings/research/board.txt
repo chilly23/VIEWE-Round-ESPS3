@@ -1,0 +1,462 @@
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 1 / 15
+SMART DISPLAY MODULE
+SPECIFICATION
+Customer Confirmation
+Approved by
+Notes
+ESP32 S3 Round Dev Board with display
+Model:
+ESP32 S3 Round Dev Board
+Version:
+V1.1
+Date:
+2025-8-28
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 2 / 15
+REVISION HISTORY
+Revision
+Date
+Contents of Revision Change
+Remark
+V1.0
+20250828
+Preliminary release(integrated 1.5-inch AMOLED
+/1.75-inch AMOLED/1.85-inch LCD options,
+Added network configuration & activation
+function,supported LVGL UI)
+V1.1
+20250917
+Optimize the document structure and add
+visual PIN explanations
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 3 / 15
+TABLE of CONTENTS
+1. INTRODUCTION........................................................................................................................................................... 4
+1.1 Features.............................................................................................................................................................4
+1.2 Appearance picture...........................................................................................................................................5
+1.3 Basic Activation & Usage................................................................................................................................ 6
+2. PRODUCT INFORMATION........................................................................................................................................ 7
+2.1 Hardware Description.......................................................................................................................................7
+2.2 GPIO Summary Table...................................................................................................................................... 8
+2.3 Display Information and Physical Map........................................................................................................... 9
+2.4 Voltage & Current...........................................................................................................................................12
+2.5 Reliability Test................................................................................................................................................12
+3. SCHEMATIC.................................................................................................................................................................13
+4. DIMENSION DRAWING ............................................................................................................................................ 14
+4. RELATED MATERIALS ............................................................................................................................................ 15
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 4 / 15
+1. Introduction
+1.1 Features
+Brief Info:
+1) Button control: One power-on button(long press 2 seconds to power on/off),one reset
+button.(Boot key ,for program download),one RST key(hardware reset).
+2) Power Supply:Supports dual power modes---DC 5V(recommended 5V 1A adapter,via
+USB)+battery,support charge/discharge;USB priority when both connected;Integrated
+5V-to-3.3V conversion circuit with power indicator(lights up when 3.3V output is normal.
+3) Extended Functions:Integrated I2S digital microphone,I2S DAC(digital-to-analog
+conversion),TF (SD) card interface,6-axis IMU sensor (motion detection),capacitive touch
+function,USB_OTG interface (for external device expansion),and SD 3078 real-time clock
+module (providing precise timekeeping capabilities with low-power backup functionally).
+Additionally,the development board features versatile screen interfaces that are compatible with
+multiple display sizes,including 1.5-inch,1.75-inch,and 1.85-inch screens,ensuring flexible
+adaptation to various application requirement.
+4) Backup IO: Multiple GPIO pins led out(IO3/IO8/IO43/IO44) for peripheral
+expansion,supporting SPI/I2C/I2S/UART interfaces.
+5) Status Indication:RGB LED(Wi-Fi connecting:blue blinking;network success:green solid;low
+battery:red blinking;power off:red flash once).
+System
+1) OS: RTOS
+2) CPU: ESP32-S3-N16R8
+240MHz
+Memory:520KB SRAM,8MB PSRAM,448KB ROM
+Storage:16MB Flash
+3) Wireless Connectivity:Support 2.4GHz Wi-Fi,BLE 5.0
+4) Interface: USB(power supply + program download),USB_OTG,UART,QSPI(screen
+control),I2C(IMU/touch),I2S(audio),TF card slot
+5) Supported Peripherals:
+GPIO,SPI,QSPI,I2C,I2S,UART,ADC,touch sensor,6-axis IMU,TF card controller,RGB LED
+PWM,full-speed USB 2.0,timers,watchdogs
+Other
+1) Operation Temperature：-20~70℃
+2) Storage Temperature：-30~80℃
+3) Environmental Standard:Complies with RoHS 2.0 and halogen-free requirements
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 5 / 15
+1.2 Appearance picture
+1.5-inch AMOLED Combined Multifunctional Board
+1.75-inch AMOLED Combined Multifunctional Board
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 6 / 15
+1.85-inch TFT Combined Multifunctional Board
+1.3 Basic Activation & Usage
+1.Power On/Off:
+Power On:Connect to 5V USB or install battery,long press power button for 3 seconds--screen
+lights up and displays hot spot name.
+Power Off:Long press power button for 2 seconds,RGB LED flashes red once,screen turns off.
+2.Wi-Fi hot spot Connection: Search for and connect to the device’s hot spot (e.g., "Xiaozhi-2451")
+using a mobile phone/computer; no password is required by default.
+3.Network Configuration:
+If the browser does not redirect automatically,manually enter the address:http://192.168.4.1
+Select a 2.4GHz Wi-Fi(5GHz is not supported) on the configuration page,enter the password,and
+submit..
+4.Device Activation:
+After successful network connection, visit the official website: http://xiaozhi.me to register and log
+in to an account.
+Click "Console →
+Add Device" and enter the first line of numbers displayed on the screen
+(device ID).
+5.Verification & Usage:
+Enter the verification code (second line of numbers displayed on the screen) to complete device
+binding.
+After binding, configure the voice role (e.g., "Wanwan Xiaohe") and select a language model (e.g.,
+Qwen Real-Time) on the "Agent" page to start AI interaction.
+Note: The above usage method is for customers who have flashed the Xiaozhi firmware. If you do
+not use Xiaozhi, it can be used as an ESP32S3 development board. Materials: Xiaozhi source code,
+Xiaozhi firmware, other sample codes
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 7 / 15
+2. Product information
+2.1 Hardware Description
+1、ESP32-S3
+16MB PSRAM, 2.4G Wi-Fi , Bluetooth 5
+2、1.5-inch QSPI VIEWE display interface
+3、1.75-inch QSPI VIEWE display interface
+4、1.85-inch QSPI VIEWE display interface
+5、Type-C interface
+Can be used for power supply, program burning,
+and debugging
+6、USER-LED
+Power indicator light
+8、BOOT button
+Press when powering on or resetting to enter
+download mode
+9、RST (RESET) button
+10、PWR (Power) button
+11、RTC socket
+Connect a rechargeable RTC battery (only
+supports rechargeable RTC batteries)
+12、SMD microphone
+13、Speaker interface
+MX1.25 2P connector, supports 8 Ω
+2W
+speakers
+14、TF card slot
+15、IMU six-axis inertial sensor
+16、RTC real-time clock
+17、GPIO
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 8 / 15
+2.2 GPIO Summary Table
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 9 / 15
+2.3 Display Information and Physical Map
+Item
+1.5-inch AMOLED
+Unit
+Remark
+Pixel Driving element
+AMOLED
+-
+Screen Size
+1.51
+Inch
+Diagonal
+Resolution
+466*466
+Dots
+-
+Display Area Size
+38.3052*38.3052
+mm
+Interface
+QSPI
+-
+-
+Display Mode
+Normal Black
+-
+Driver IC (Control IC)
+CO5300AF-42
+-
+Touch IC
+CST9217
+-
+Active Area(mm)
+43.2(W)*57.6(H)
+mm
+Module Size (W*H*D)
+44.3(W)*44.3(H)*2.405(D)
+mm
+Luminance
+450
+cd/m2
+Type
+Viewing Direction
+All
+O’clock
+-
+Display Color
+16.7M
+Colors
+24bits
+Pixel Pitch
+0.0822
+mm
+Pixel Per Inch
+309
+PPI
+Operating Temperature
+-20 ~ 70
+℃
+Storage Temperature
+-30 ~ 80
+℃
+Operating Voltage
+5
+V
+Power Consumption
+-
+-
+-
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 10 / 15
+Item
+1.75-inch AMOLED
+Unit
+Remark
+Pixel Driving element
+AMOLED
+-
+Screen Size
+1.75
+Inch
+Diagonal
+Resolution
+466*466
+Dots
+-
+Display Area Size
+Φ43.76
+mm
+Interface
+QSPI
+-
+-
+Display Mode
+Normal Black
+Driver IC (Control IC)
+CO5300
+Touch IC
+CST9217
+Module Size (W*H*D)
+45.93(W)*46.35(H)*0.8(D)
+mm
+Luminance
+700
+cd/m2
+Type
+Viewing Direction
+All
+O’clock
+-
+Display Color
+16.7M
+Colors
+24bits
+Pixel Pitch
+0.0822
+mm
+Pixel Per Inch
+309
+PPI
+Operating Temperature
+-20 ~ 70
+℃
+Storage Temperature
+-30 ~ 80
+℃
+Operating Voltage
+5
+V
+Power Consumption
+-
+-
+-
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 11 / 15
+Item
+1.85-inch TFT
+Unit
+Remark
+Pixel Driving element
+α-Si TFT
+-
+-
+Screen Size
+1.85
+Inch
+Diagonal
+Resolution
+360RGB×360
+Dots
+-
+Display Area Size
+45.68(H)×45.68(V)
+mm
+-
+Module Outline
+Dimension
+48.08(H)×49.95(V)×2.12(T)
+mm
+-
+Interface
+QSPI
+-
+-
+Display Mode
+Normal Black
+-
+-
+Driver IC (Control IC)
+ST77916
+-
+-
+Touch IC
+CST816S
+-
+-
+Module Size (W*H*D)
+45.93(W)*46.35(H)*0.8(D)
+mm
+Type
+Luminance
+400
+cd/m2
+Type
+Viewing Direction
+All
+O’clock
+-
+Display Color
+262K
+Colors
+24bits
+Pixel Pitch
+0.2
+mm
+-
+Pixel Per Inch
+127
+PPI
+Operating Temperature
+-20~ 70
+℃
+Storage Temperature
+-30 ~ 80
+℃
+Operating Voltage
+5
+V
+-
+Power Consumption
+-
+-
+-
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 12 / 15
+2.4 Voltage & Current
+Item
+Conditions
+Type
+Unit
+Power Voltage(DC)
+Main system power
+5.0
+V
+Operation Current
+(1.5-inch AMOLED)
+VCC= +5V,charging
+1000
+mA
+VCC= +5V, in non-charging
+130
+mA
+Operation Current
+(1.75-inch AMOLED)
+VCC= +5V,charging
+1030
+mA
+VCC= +5V, in non-charging
+130
+mA
+Operation Current
+(1.85-inch LCD)
+VCC= +5V,charging
+1100
+mA
+VCC= +5V, in non-charging
+210
+mA
+Recommended power supply:5V
+1A
+DC
+2.5 Reliability Test
+Item
+Conditions
+Min
+Type
+Max
+Unit
+Operating Temperature
+60%RH at 5V voltage
+-20
+25
+70
+℃
+Storage Temperature
+---
+-30
+25
+80
+℃
+Operating Humidity
+25°C
+10%
+60%
+90%
+RH
+ESD
+---
+Contact: ±4KV
+Air: ±8KV
+KV
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 13 / 15
+3. Schematic
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 14 / 15
+4. dimension drawing
+www.viewedisplay.com
+telephone：400-660-3306
+Page: 15 / 15
+4. Related materials
+GitHub：VIEWESMART/ESP32-S3-Round-Dev-Board: The ESP32S3 multi-screen
+AI voice development board launched by VIEWE also includes an inertial sensor, a
+real-time clock, and a battery.
+Gitee:
