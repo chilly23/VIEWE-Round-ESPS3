@@ -1,0 +1,23 @@
+{
+  "board": "VIEWE-ROUND-V1.1 / CO5300 / ESP32-S3 N16R8",
+  "project": "03_esp_brookesia",
+  "flash_settings": {
+    "flash_mode": "dio",
+    "flash_size": "16MB",
+    "flash_freq": "80m"
+  },
+  "files": {
+    "0x0": {
+      "file": "bootloader.bin",
+      "sha256": "b6e18e55f8ef32b34325f31ec00c7a5c874be6055f81b7d7e09c2924b4354164"
+    },
+    "0x8000": {
+      "file": "partition-table.bin",
+      "sha256": "fd8026bff850ca0dee41c41305160317fffe604dda30a9bd5a701ac82d96fa17"
+    },
+    "0x10000": {
+      "file": "esp-brookesia.bin",
+      "sha256": "881855f1f65bf6f37aac723acf0bb309d9f5b5ca949de9061a654de7e285c7f5"
+    }
+  }
+}
