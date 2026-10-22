@@ -1,0 +1,46 @@
+# ESP-IDF and local build output
+build/
+build-*/
+managed_components/
+.pio/
+sdkconfig
+sdkconfig.old
+*.elf
+*.map
+*.obj
+*.o
+*.a
+
+# Private provisioning, device dumps, and local packages
+.sdk-token
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+backup/
+backups/
+artifacts/
+.host-tools/
+
+# Downloaded tools, caches, logs, and editor state
+python_deps/
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.cache/
+*.log
+*.tmp
+*.bak
+*.pdb
+*.exe
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+paused-build-processes.json
+
+# Public upstream development key required by the Muse default build
+!muse-board/esp32/dev_signing_key.pem

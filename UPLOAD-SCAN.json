@@ -1,0 +1,9 @@
+{
+  "files": 8591,
+  "bytes": 306422578,
+  "archives_scanned": 1,
+  "firmware_hashes_checked": 20,
+  "findings": [],
+  "allowed_public_dev_key": "muse-board/esp32/dev_signing_key.pem",
+  "scope": "Local SDK token exact-match and common credential signatures, including ZIP contents. No fresh build or hardware testing."
+}
