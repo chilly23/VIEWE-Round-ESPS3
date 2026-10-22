@@ -1,0 +1,68 @@
+{
+  "esp-mosaico-fluidbox-main": {
+    "project": "esp-mosaico-fluidbox-main",
+    "build_passed": true,
+    "flash_passed": true,
+    "runtime_health_messages": 18,
+    "runtime_panics_detected": false,
+    "boot_test_passed": true,
+    "physical_screen_touch_verified": true,
+    "physical_animation_verified": true,
+    "physical_orientation_verified": true,
+    "control_direction_verification": "User confirmed touch and tilt correct"
+  },
+  "02_lvgl_demo_v9": {
+    "project": "02_lvgl_demo_v9",
+    "build_passed": true,
+    "flash_passed": true,
+    "runtime_health_messages": 7,
+    "runtime_panics_detected": false,
+    "boot_test_passed": true,
+    "render_activity_detected": true,
+    "physical_screen_touch_verified": false,
+    "physical_animation_verified": true,
+    "physical_orientation_verified": true
+  },
+  "03_esp_brookesia": {
+    "project": "03_esp_brookesia",
+    "build_passed": true,
+    "flash_passed": true,
+    "runtime_health_messages": 7,
+    "runtime_panics_detected": false,
+    "boot_test_passed": true,
+    "render_activity_detected": true,
+    "physical_screen_touch_verified": true,
+    "physical_orientation_verified": true,
+    "stack_overflow_regression": "32KB UI task stack: boot test passed; user confirmed launcher and touch"
+  },
+  "04_Immersive_block": {
+    "project": "04_Immersive_block",
+    "build_passed": true,
+    "flash_passed": true,
+    "runtime_health_messages": 7,
+    "runtime_panics_detected": false,
+    "boot_test_passed": true,
+    "render_activity_detected": true,
+    "physical_screen_touch_verified": false,
+    "physical_animation_verified": true,
+    "physical_orientation_verified": true,
+    "physical_tilt_verified": true
+  },
+  "05_Spec_Analyzer": {
+    "project": "05_Spec_Analyzer",
+    "build_passed": true,
+    "flash_passed": true,
+    "runtime_health_messages": 7,
+    "runtime_panics_detected": false,
+    "boot_test_passed": true,
+    "render_activity_detected": true,
+    "physical_screen_touch_verified": false,
+    "audio_signal_detected": false,
+    "application_test_passed": false,
+    "physical_audio_verified": false,
+    "physical_display_verified": true,
+    "application_error": "Display works. Microphone samples remain zero with mono and stereo capture; audio is not working."
+  },
+  "final_installed_demo": "esp-mosaico-fluidbox-main",
+  "final_restore_verified": true
+}
