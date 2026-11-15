@@ -4,7 +4,7 @@ Double-click Start.cmd to choose a demo. Only one firmware runs at a time.
 Each project also has Flash.cmd and Build.cmd. Flash.cmd uses the prebuilt
 firmware when available; Build.cmd rebuilds the editable source with ESP-IDF 6.0.1
 and refreshes that project's prebuilt firmware. Keep the USB cable connected.
-No Muse account, token or phone app is required for any of these demos.
+These demos run without an account, token or phone app.
 If uploading cannot connect: hold BOOT, tap RST, release BOOT, then retry.
 The current firmware is replaced when you choose a different demo.
 

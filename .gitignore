@@ -41,6 +41,3 @@ venv/
 .DS_Store
 Thumbs.db
 paused-build-processes.json
-
-# Public upstream development key required by the Muse default build
-!muse-board/esp32/dev_signing_key.pem

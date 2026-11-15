@@ -1,6 +1,6 @@
 # VIEWE Round ESP32-S3
 
-ESP32-S3 firmware and Arduino sketches for a round CO5300 AMOLED display. The collection includes LVGL demos, touch animations, FluidBox, and a Muse board port.
+ESP32-S3 firmware and Arduino sketches for a round CO5300 AMOLED display. The collection includes LVGL demos, touch animations, FluidBox, and Arduino graphics experiments.
 
 ![VIEWE round board](img/espdisp1.jpeg)
 
@@ -13,17 +13,30 @@ ESP32-S3 firmware and Arduino sketches for a round CO5300 AMOLED display. The co
 | `04_Immersive_block` | Shapes controlled by touch or an identified QMI8658 | `Build.cmd` or `Flash.cmd` |
 | `05_Spec_Analyzer` | Spectrum display experiment | [Recorded limitations](VIEWE-Demos/README.txt) |
 | `esp-mosaico-fluidbox-main` | FluidBox with touch and tilt input | [Project guide](esp-mosaico-fluidbox-main/README.md) |
-| `Muse-Offline-VIEWE` | Offline Muse interface with scripted interactions | [Flashing guide](Muse-Offline-VIEWE/README.txt) |
-| `muse-board` | Muse SDK and VIEWE board adaptation | [Setup guide](muse-board/START-HERE.md) |
 | `round_animations_co5300` | Graphics animations | Open the `.ino` file |
 | `round_generative_art` | Generative graphics | Open the `.ino` file |
 | `round_loader_animations` | Six loader animations | Open the `.ino` file |
 | `round_url_display` | GIF, JPEG, and PNG display over Wi-Fi | Configure the sketch locally |
 | `viewe_touch_rings` | Touch-responsive rings | [Arduino guide](viewe_touch_rings/README.md) |
 
+The standalone Muse project now lives in [its own repository](https://github.com/chilly23/Muse-AI-Gadget_ESP32-S3_Meta).
+
 ## System design
 
 ![Build paths and device interfaces](docs/architecture.png)
+
+```mermaid
+flowchart LR
+    Demos[LVGL / Brookesia / Immersive demos] --> BSP[Shared VIEWE BSP]
+    BSP --> IDF[ESP-IDF firmware]
+    Sketches[Arduino graphics sketches] --> Arduino[Arduino firmware]
+    IDF --> Board[ESP32-S3 round board]
+    Arduino --> Board
+    Board --> Display[CO5300 display]
+    Touch[Touch input] --> Board
+```
+
+One firmware runs at a time. Shared display helpers retain upstream attribution and remain required by the non-Muse demos.
 
 The ESP-IDF demos share the BSP and component sources in `VIEWE-Demos`. Keep these directories beside each other.
 Arduino sketches use their own graphics and input code. Each firmware image replaces the image currently running on the board.
@@ -67,14 +80,12 @@ This ring image is a software preview. It is not a photograph of a running devic
 See [VALIDATION.json](VIEWE-Demos/VALIDATION.json) for earlier demo checks.
 
 - The spectrum analyzer notes report no working microphone input on the tested board.
-- The offline Muse demo uses scripted replies. It does not provide a connected AI service.
 - The touch-ring notes do not claim a completed hardware test.
 - This documentation update does not add new build or hardware test results.
 
 ## Repository contents and license
 
 This repository excludes generated builds, private SDK tokens, and device flash backups. Supplied demo firmware and its hash manifests remain available.
-The Muse source includes a public development signing key required by its default build.
 
 [MIT](LICENSE) covers original contributions by Velan E. Bundled projects retain their existing licenses.
 Read [LICENSING.md](LICENSING.md) for Apache-2.0, MIT, library, and asset scope.
